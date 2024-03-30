@@ -259,7 +259,7 @@ user-select: none; /* Standard */
 
 .search-form__checkbox:checked ~ .search-form__pseudo-checkbox::after {
   content: '';
-  position: absolute;
+  /*position: absolute;*/
   top: 1px;
   left: 1px;
   width: 15px;
