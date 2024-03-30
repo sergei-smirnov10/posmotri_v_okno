@@ -189,7 +189,6 @@ input:-webkit-autofill:focus {
 }
 
 .visually-hidden {
-  /*position: absolute;*/
   inline-size: 1px;
   block-size: 1px;
   overflow: hidden;
@@ -259,7 +258,6 @@ user-select: none; /* Standard */
 
 .search-form__checkbox:checked ~ .search-form__pseudo-checkbox::after {
   content: '';
-  /*position: absolute;*/
   top: 1px;
   left: 1px;
   width: 15px;
