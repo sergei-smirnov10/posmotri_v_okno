@@ -185,7 +185,13 @@ input:-webkit-autofill:focus {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap; 
   }
 
   
@@ -241,7 +247,7 @@ user-select: none; /* Standard */
   text-decoration: underline;
 }
 
-.search-form__label:focus-within {
+.search-form__label:has(:focus-visible)  {
   outline: white solid 1px;
 }
 .search-form__pseudo-checkbox {
